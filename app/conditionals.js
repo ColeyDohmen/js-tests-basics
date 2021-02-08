@@ -19,6 +19,12 @@ function largerNum(num1, num2) {
 // output: "F"
 
 function testGrader(score, possible) {
+    if (score >= 23)
+    return ("A")
+    else if (score <= 22)
+    return ("C")
+    else if (score <= 10)
+    return ("F")
 
 }
 
@@ -34,12 +40,29 @@ function testGrader(score, possible) {
 //Make sure your ranges are inclusive
 
 function timeOfDayGreeting(hour) {
+    if (hour <= 4)
+    return "good night"
+    else if (hour <= 11)
+    return "good morning"
+    else if (hour <= 17)    
+    return "good afternoon"
+    else if (hour <= 21)
+    return "good evening";
+    else if(hour <= 24)
+    return "good night"
     // you code below
 
 }
 
 //4. Write a function that will take in a number and return 'fever' if it indicates a fever (over 98.6) and additionally if the person should go to the hospital (at or above 103) 'fever go to hospital' (hint: try this with string concatenation), if it is under return 'no fever'
 function isFever(temp) {
+    if (temp >= 103)
+    return "fever go to hospital"
+    else if (temp > 98.6)
+    return "fever"
+ 
+    else if (temp <= 98.6)
+    return "no fever"
 
 }
 
@@ -52,6 +75,11 @@ let myCar = {
 }
 
 function isStopped(car) {
+    if (car.moving == false){
+    return (true) 
+    }
+    else {return (false)}
+    
 
 }
 
